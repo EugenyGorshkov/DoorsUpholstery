@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const Navigation:React.FC = () => {
     return (
-        <nav>
-            <ul>
+        <nav className='flex container mx-auto text-center justify-center h-10 items-center'>
+            <ul className='flex gap-5'>
                 <li><Link to='/'>Домашняя</Link></li>
                 <li><Link to='/price'>Цены</Link></li>
                 <li><Link to='/catalog'>Каталог</Link></li>
