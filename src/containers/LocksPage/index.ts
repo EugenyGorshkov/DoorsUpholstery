@@ -1,0 +1,1 @@
+export { LocksPage } from './LocksPage';
