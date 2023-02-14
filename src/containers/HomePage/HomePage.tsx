@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { CallBackForm } from '@/components/CallBackForm';
+
 export const HomePage: React.FC = () => {
     return (
         <>
@@ -58,6 +60,9 @@ export const HomePage: React.FC = () => {
                     </ul>
                     </p>
                     <p className='pt-5 pb-5'>Важно! При проведении реставрационных и ремонтных работ опытному мастеру-обивщику вовсе не нужно снимать дверь с петель. Перетяжка делается на дому, по месту и на весу.</p>
+                </section>
+                <section>
+                    <CallBackForm />
                 </section>
 
             </div>
