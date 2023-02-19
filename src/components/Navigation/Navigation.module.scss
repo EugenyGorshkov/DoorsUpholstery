@@ -1,0 +1,20 @@
+.subMenuBody {
+    display: none;
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center; 
+        justify-content: center;
+        height: 2.5rem;
+        align-items: center;
+    }
+}
+
+.subMenuList {
+    display: none;
+    &.active {
+        display: flex;
+        gap: 0.5rem;
+        white-space: nowrap;
+    }
+}
