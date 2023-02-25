@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'about-picture1': "url('/src/assets/assetContacts/1_Door.jpg')",
+        'about-picture2': "url('/src/assets/assetContacts/2_Door.jpg')",
+      },
       flexBasis: {
         '1/7': '14.2857143%',
         '2/7': '28.5714286%',
