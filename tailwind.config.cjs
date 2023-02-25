@@ -7,8 +7,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'about-picture1': "url('/src/assets/assetContacts/1_Door.jpg')",
-        'about-picture2': "url('/src/assets/assetContacts/2_Door.jpg')",
+        'home-picture1': "url('/src/assets/image/home-1.jpg')",
+        'about-picture1': "url('/src/assets/assetAbout/About_1.jpg')",
+        'about-picture2': "url('/src/assets/assetAbout/About_2.jpg')",
+        'about-picture3': "url('/src/assets/assetAbout/About_3.jpg')",
+        'about-picture4': "url('/src/assets/assetAbout/About_4.jpg')",
+        'about-picture5': "url('/src/assets/assetAbout/About_5.jpg')",
+        'about-picture6': "url('/src/assets/assetAbout/About_6.jpg')",
+        'about-picture7': "url('/src/assets/assetAbout/About_7.jpg')",
+        'about-picture8': "url('/src/assets/assetAbout/About_8.jpg')",
+        'about-picture9': "url('/src/assets/assetAbout/About_9.jpg')",
       },
       flexBasis: {
         '1/7': '14.2857143%',

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { RoutesConfig } from '@/routes';
 import { Navigation } from '@/components/Navigation';
+import {Footer} from "@/components/Footer/Footer";
 
 export const App: React.FC = () => {  
     return (
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
                 />
             ))}
             </Routes>
+            <Footer/>
         </>
     )
 }

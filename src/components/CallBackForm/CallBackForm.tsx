@@ -15,7 +15,7 @@ export const CallBackForm: React.FC = () => {
                 </div>
                 <div>
                     <h3>Комментарий</h3>
-                    <textarea name="" id="" cols={50} rows={4} placeholder='Перезвоните мне в 17:00' className='p-2 bg-gray-200  rounded resize-none'></textarea>
+                    <textarea name="" id="" cols={40} rows={4} placeholder='Перезвоните мне в 17:00' className='p-2 bg-gray-200  rounded resize-none'></textarea>
                 </div>
                 <p>* - поля, обязательные для заполнения</p>
                 <button type='submit' className='bg-gray-400 rounded p-2 mt-2'>ОТПРАВИТЬ ЗАЯВКУ</button>
