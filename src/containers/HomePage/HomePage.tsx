@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import {CallBackForm} from '@/components/CallBackForm';
 import {CardComponent} from '@/components/HomePage/CardComponent';
+import priceImg from '/src/assets/assetAbout/about_6.jpg'
 
 import bgImg from '@/assets/image/home-1.jpg' // над пикчей нужно посидеть она убогая
 
@@ -10,17 +11,72 @@ export const HomePage: React.FC = () => {
     return (
         <>
             {/*====== background =====*/}
-            <section className='w-full'>
-                {/*<img src={bgImg} alt="" className='w-full' />*/}
-                <div className='flex flex-col justify-center items-end bg-home-picture1 bg-cover h-[620px]'>
-                    <div className='backdrop-blur-lg rounded-xl'>
-                        <p className='text-center pr-10 text-8xl text-amber-50'>Обивка Дверей</p>
-                        <p className='text-end pr-10 pt-5 text-xl text-amber-50'>Новая жизнь старым вещам</p>
+            {/*<section className='w-full'>*/}
+            {/*    /!*<img src={bgImg} alt="" className='w-full' />*!/*/}
+            {/*    <div className='flex flex-col justify-center items-end bg-home-picture1 bg-cover h-[620px]'>*/}
+            {/*        <div className='backdrop-blur-lg rounded-xl'>*/}
+            {/*            <p className='text-center pr-10 text-8xl text-amber-50'>Обивка Дверей</p>*/}
+            {/*            <p className='text-end pr-10 pt-5 text-xl text-amber-50'>Новая жизнь старым вещам</p>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+            <section className="relative bg-home-picture1 bg-cover bg-center bg-no-repeat">
+                <div className="absolute inset-0 bg-white/50 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/50 sm:to-white/105"></div>
+                <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+                    <div className="max-w-xl text-center sm:text-left">
+                        <h1 className="text-3xl font-extrabold sm:text-5xl">Обивка Дверей
+                            <strong className="block font-extrabold text-blue-900">Домашний уют</strong>
+                        </h1>
+                        <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">Новая жизнь старым вещам</p>
+
+                        <div className="mt-8 flex flex-wrap gap-4 text-center">
+                            <a href="#"
+                                className="block w-full rounded bg-blue-900 px-12 py-3 text-sm font-medium text-white
+                                shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+                                Свяжись с нами
+                            </a>
+                            <Link to='/about'
+                                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-blue-900
+                                shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">Узнать больше
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
+
             {/*====== background =====*/}
-            <div className='container mx-auto'>
+            <div className='container mx-auto mt-12'>
+                <section className="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
+                    <img
+                        alt="Trainer"
+                        src={priceImg}
+                        className="h-32 w-full object-cover md:h-full"
+                    />
+                    <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
+                        <p className="text-sm font-semibold uppercase tracking-widest">
+                            Успей получить
+                        </p>
+
+                        <h2 className="mt-6 font-black uppercase">
+      <span className="text-4xl font-black sm:text-5xl lg:text-6xl">
+        Скидка 20%
+      </span>
+
+                            <span className="mt-2 block text-sm">При заказе обивки от 2-х дверей</span>
+                        </h2>
+
+                        <a
+                            className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
+                            href=""
+                        >
+                            Позвонить
+                        </a>
+
+                        <p className="mt-8 text-xs font-medium uppercase text-gray-400">
+                            Offer valid until 24th March, 2021 *
+                        </p>
+                    </div>
+                </section>
                 <section className=''>
                     <h2 className='text-center text-lg font-bold'>Обивка входных дверей</h2>
                     <p className='pt-5 pb-5'>
