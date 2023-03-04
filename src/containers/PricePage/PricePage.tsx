@@ -2,8 +2,8 @@ import React from 'react';
 
 export const PricePage: React.FC = () => {
     return (
-        <>
-            <div className='container mx-auto'>
+        <div className='bg-gray-800'>
+            <div className='container mx-auto lg:pt-32 pt-16 text-white'>
                 <p className='text-right p-3 border-b-2'>Цены действительны по 31.12.2021г.</p>
                 <div className='flex flex-col'>
                     {/* Обивка дверей */}
@@ -208,6 +208,6 @@ export const PricePage: React.FC = () => {
                         и безналичному расчёту.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

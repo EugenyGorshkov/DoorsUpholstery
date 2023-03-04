@@ -4,7 +4,7 @@ import {MapCard} from "@/components/ContactsPage/MapCard/MapCard";
 export const ContactsPage: React.FC = () => {
     return (
         <>
-            <div className='bg-[#EFE9DB]'>
+            <div className='bg-[#EFE9DB] lg:pt-32 pt-16'>
                 <div className='container mx-auto '>
                     <div className='flex flex-col lg:flex-row gap-8 justify-center py-3'>
                         <MapCard/>

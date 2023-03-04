@@ -11,7 +11,7 @@ import { WallPage } from "@/containers/WallPage";
 export const RoutesConfig = [
     {
         path: '/',
-        element: <HomePage />
+        element: <HomePage/>
     },
     {
         path: '/price',
