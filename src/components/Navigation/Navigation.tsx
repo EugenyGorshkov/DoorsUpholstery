@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import cn from "classnames";
 
 import useWindowDimensions from "@/hooks/useWindowDimensions";
@@ -21,6 +21,10 @@ export const Navigation: React.FC = () => {
     { title: "О нас", path: "/about" },
     { title: "Контакты", path: "/contacts" },
   ];
+
+  let activeStyle = {
+    textDecoration: "underline",
+  };
 
   const MenuActiveHandler = () => {
     menuActive ? setMenuActive(false) : setMenuActive(true);
@@ -100,15 +104,19 @@ export const Navigation: React.FC = () => {
                       scroll(0, 0);
                     }}
                   >
-                    <Link
+                    <NavLink
                       className={cn(
-                        "text-gray-500 transition hover:text-gray-500/75 lg:dark:text-white dark:hover:text-white/75",
-                        scrollTop > 0 ? "lg:dark:text-black" : ""
+                        "text-black transition hover:text-gray-500/75 lg:dark:text-white dark:hover:text-white/75",
+                        scrollTop > 0 ? "lg:dark:text-black" : styles.link ,
+                        
                       )}
                       to={el.path}
+                      style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
                     >
                       {el.title}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

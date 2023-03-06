@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         'home-picture1': "url('/src/assets/image/home-1.jpg')",
         'home-picture2': "url('/src/assets/image/homePNG.jpg')",
+        'services-bg': "url('/src/assets/image/bg-services.png')",
         'about-picture1': "url('/src/assets/assetAbout/About_1.jpg')",
         'about-picture2': "url('/src/assets/assetAbout/About_2.jpg')",
         'about-picture3': "url('/src/assets/assetAbout/About_3.jpg')",

@@ -17,28 +17,35 @@
         transition: all 0.3s ease 0s;
         background-color: black;
     }
+
     &::after,
     &::before {
         content: '';
     }
+
     &::after {
         bottom: 0;
     }
+
     &::before {
         top: 0;
     }
+
     span {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
     }
+
     &._active span {
         transform: scale(0) translate(0px, -50%);
     }
-    &._active::before  {
+
+    &._active::before {
         top: 50%;
         transform: rotate(-45deg) translate(0px, -50%);
     }
-    &._active::after  {
+
+    &._active::after {
         bottom: 50%;
         transform: rotate(45deg) translate(0px, 50%);
     }
@@ -58,13 +65,28 @@
         width: 100%;
         transform: translateX(+150%);
         background-color: white;
-        transition: all 0.1s;   
+        transition: all 0.1s;
+
         &._active {
             transform: translateX(0);
         }
     }
+
     & li {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+}
+
+@media (min-width: 1024px) {
+    .link {
+        text-shadow: 1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
+    }
+}
+
+.navLinkActive {
+    text-decoration: underline;
 }
