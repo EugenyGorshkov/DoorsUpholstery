@@ -203,6 +203,9 @@ export const HomePage: React.FC = () => {
             делается на дому, по месту и на весу.
           </p>
         </section>
+        <section>
+          <CallBackForm />
+        </section>
         {/* <section>
           <CallBackForm />
         </section>
