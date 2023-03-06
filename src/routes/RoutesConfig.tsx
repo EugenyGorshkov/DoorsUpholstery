@@ -6,6 +6,7 @@ import { GalleryPage } from "@/containers/GalleryPage";
 import { HomePage } from "@/containers/HomePage";
 import { LocksPage } from "@/containers/LocksPage";
 import { PricePage } from "@/containers/PricePage";
+import { ServicesPage } from "@/containers/ServicesPage";
 import { WallPage } from "@/containers/WallPage";
 
 export const RoutesConfig = [
@@ -16,6 +17,10 @@ export const RoutesConfig = [
     {
         path: '/price',
         element: <PricePage />
+    },
+    {
+        path: '/services',
+        element: <ServicesPage />
     },
     {
         path: '/catalog',
